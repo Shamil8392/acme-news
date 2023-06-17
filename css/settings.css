@@ -1,0 +1,146 @@
+.header-button {
+  visibility: hidden;
+}
+
+.profile {
+  transform: translateY(2px);
+  min-height: 1365px;
+  background-image: url('../img/cat.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.profile__container {
+  position: relative;
+  max-width: calc(100% - 222px);
+}
+
+.profile__subject {
+  margin-top: 0;
+  font-size: 48px;
+  color: var(--color-white);
+  transform: translateY(54px) translateX(-4px);
+  letter-spacing: -3.5px;
+}
+
+.profile__buttons {
+  margin-top: 91px;
+  background-color: var(--color-alto);
+  border-radius: 10px;
+}
+
+.btn__settings {
+  margin: 9px 5px 9px 25px;
+  padding: 15px 26px;
+  font-size: 19px;
+  letter-spacing: -1px;
+  color: var(--color-dove_gray);
+}
+
+.btn__settings:active,
+.btn__settings:hover,
+.btn__settings:focus {
+  outline: none;
+  background-color: var(--color-regent_blue);
+  border-radius: 10px;
+}
+
+.profile__main {
+  display: inline-block;
+  max-width: 562px;
+  min-height: 414px;
+  margin-top: 41px;
+  background-color: var(--color-alto);
+  border-radius: 10px;
+}
+
+.profile__box,
+.rating__container {
+  margin-left: 40px;
+  transform: translateY(10px);
+}
+
+.subtitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.main__container {
+  flex-wrap: wrap;
+  background-color: var(--color-alto);
+}
+
+.profile__name::placeholder {
+  padding-left: 4px;
+  font-size: 18px;
+  color: var(--color-dove_gray);
+  letter-spacing: -1.8px;
+}
+
+.fonts__style {
+  width: 227px;
+  margin-bottom: 12px;
+  padding: 12px 58px 12px 15px;
+  font-size: 14px;
+  color: var(--color-dove_gray);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.main__settings:first-child {
+  margin-right: 12px;
+}
+
+.main__settings:nth-last-child(2n + 1) {
+  margin-right: 12px;
+}
+
+.profile__btn,
+.rating__btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px 40px;
+  background-color: var(--color-purple_heart);
+  border-radius: 10px;
+  color: var(--color-white);
+  letter-spacing: -.3px;
+}
+
+.profile__total {
+  position: relative;
+  visibility: hidden;
+  justify-content: space-between;
+}
+
+.profile--total {
+  visibility: visible;
+  /* display: block; */
+}
+
+.rating__box {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  max-width: 560px;
+  min-height: 308px;
+  margin-top: 41px;
+  background-color: var(--color-alto);
+  border-radius: 10px;
+}
+
+.rating__form {
+  flex-wrap: wrap;
+}
+
+.rating__input {
+  margin: 2px 13px 15px 0;
+}
+
+.rating__input::placeholder {
+  padding-left: 4px;
+  font-size: 16px;
+  letter-spacing: -.5px;
+}

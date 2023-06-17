@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="flex">
+      <button class="btn btn-reset burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+      <form class="header-search flex" method="get">
+        <!-- action="https://jsonplaceholder.typicode.com/posts" -->
+        <label for="search" class="header-label"></label>
+        <div class="header-search-input search-field-icon flex">
+          <button class="header-input-search btn-search btn-reset" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+          <input id="search" class="header-input" type="text" name="search"
+            placeholder="Поиск новости" autofocus size="35">
+        </div>
+      </form>
+      <span class="header-span">ACME</span>
+      <div class="header-button flex">
+        <button class="btn btn-signup btn-reset">Регистрация</button>
+        <button class="btn btn-entrance btn-reset">Вход</button>
+      </div>
+    </div>
+  </header>
+  <section class="element">
+    <div class="container container-doubling element-container">
+      <h1 class="element-caption caption-blog">Блог</h1>
+      <div class="element-blog blog__element element-column flex">
+        <article class="element-wrapper">
+          <h2 class="title-hidden">Заголовок</h2>
+          <p class="text-hidden">Текст</p>
+          <img src="img/cat_1.jpg" alt="" class="element-img">
+          <button class="btn btn-reset element-button">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="element-svg">
+              <g clip-path="url(#clip0_7_190)">
+                <rect width="36" height="36" rx="10" fill="#0065F2" />
+                <path d="M15.2675 11.6717C16.4838 9.49057 17.0915 8.40001 18.0006 8.40001C18.9097 8.40001 19.5174 9.49057 
+                                          20.7337 11.6717L21.0486 12.2362C21.3942 12.8563 21.567 13.1664 21.8358 13.3709C22.1046 13.5754 22.4406 
+                                          13.6512 23.1126 13.8029L23.7232 13.9411C26.0848 14.4758 27.2646 14.7427 27.5459 15.6461C27.8262 16.5485 
+                                          27.0217 17.4902 25.4118 19.3728L24.9952 19.8595C24.5382 20.3942 24.3088 20.6621 24.2061 20.9923C24.1033 
+                                          21.3235 24.1379 21.6806 24.207 22.3939L24.2704 23.0438C24.5133 25.5562 24.6352 26.8119 23.8998 27.3696C23.1645 
+                                          27.9283 22.0585 27.4186 19.8486 26.401L19.2755 26.1379C18.6477 25.848 18.3337 25.704 18.0006 25.704C17.6675 
+                                          25.704 17.3536 25.848 16.7248 26.1379L16.1536 26.401C13.9427 27.4186 12.8368 27.9274 12.1024 27.3706C11.3661 
+                                          26.8118 11.488 25.5562 11.7309 23.0438L11.7942 22.3949C11.8633 21.6806 11.8979 21.3235 11.7942 20.9933C11.6925 
+                                          20.6621 11.463 20.3942 11.0061 19.8605L10.5894 19.3728C8.9795 17.4912 8.17502 16.5494 8.45534 15.6461C8.73662 
+                                          14.7427 9.91742 14.4749 12.279 13.9411L12.8896 13.8029C13.5606 13.6512 13.8957 13.5754 14.1654 13.3709C14.4342 
+                                          13.1664 14.607 12.8563 14.9526 12.2362L15.2675 11.6717Z"
+                  stroke="white" stroke-width="1.5" />
+              </g>
+            </svg>
+          </button>
+          <h2 class="element-title title__element">Небольшой заголовок</h2>
+          <p class="element-text">Описание новости, описание новости, описание новости, описание
+            новости,
+            описание новости, описание новости.</p>
+          <button class="btn btn-reset btn__button">Подробнее</button>
+        </article>
+        <article class="element-wrapper">
+            <h2 class="title-hidden">Заголовок</h2>
+            <p class="text-hidden">Текст</p>
+            <img src="img/cat_2.jpg" alt="" class="element-img">
+            <button class="btn btn-reset element-button">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="element-svg">
+                <g clip-path="url(#clip0_7_190)">
+                  <rect width="36" height="36" rx="10" fill="#0065F2" />
+                  <path d="M15.2675 11.6717C16.4838 9.49057 17.0915 8.40001 18.0006 8.40001C18.9097 8.40001 19.5174 9.49057 
+                                            20.7337 11.6717L21.0486 12.2362C21.3942 12.8563 21.567 13.1664 21.8358 13.3709C22.1046 13.5754 22.4406 
+                                            13.6512 23.1126 13.8029L23.7232 13.9411C26.0848 14.4758 27.2646 14.7427 27.5459 15.6461C27.8262 16.5485 
+                                            27.0217 17.4902 25.4118 19.3728L24.9952 19.8595C24.5382 20.3942 24.3088 20.6621 24.2061 20.9923C24.1033 
+                                            21.3235 24.1379 21.6806 24.207 22.3939L24.2704 23.0438C24.5133 25.5562 24.6352 26.8119 23.8998 27.3696C23.1645 
+                                            27.9283 22.0585 27.4186 19.8486 26.401L19.2755 26.1379C18.6477 25.848 18.3337 25.704 18.0006 25.704C17.6675 
+                                            25.704 17.3536 25.848 16.7248 26.1379L16.1536 26.401C13.9427 27.4186 12.8368 27.9274 12.1024 27.3706C11.3661 
+                                            26.8118 11.488 25.5562 11.7309 23.0438L11.7942 22.3949C11.8633 21.6806 11.8979 21.3235 11.7942 20.9933C11.6925 
+                                            20.6621 11.463 20.3942 11.0061 19.8605L10.5894 19.3728C8.9795 17.4912 8.17502 16.5494 8.45534 15.6461C8.73662 
+                                            14.7427 9.91742 14.4749 12.279 13.9411L12.8896 13.8029C13.5606 13.6512 13.8957 13.5754 14.1654 13.3709C14.4342 
+                                            13.1664 14.607 12.8563 14.9526 12.2362L15.2675 11.6717Z"
+                    stroke="white" stroke-width="1.5" />
+                </g>
+              </svg>
+            </button>
+            <h2 class="element-title title__element">Небольшой заголовок</h2>
+            <p class="element-text">Описание новости, описание новости, описание новости, описание
+              новости,
+              описание новости, описание новости.</p>
+            <button class="btn btn-reset btn__button">Подробнее</button>
+        </article>
+        <article class="element-wrapper">
+            <h2 class="title-hidden">Заголовок</h2>
+            <p class="text-hidden">Текст</p>
+            <img src="img/cat_3.webp" alt="" class="element-img">
+            <button class="btn btn-reset element-button">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="element-svg">
+                <g clip-path="url(#clip0_7_190)">
+                  <rect width="36" height="36" rx="10" fill="#0065F2" />
+                  <path d="M15.2675 11.6717C16.4838 9.49057 17.0915 8.40001 18.0006 8.40001C18.9097 8.40001 19.5174 9.49057 
+                                            20.7337 11.6717L21.0486 12.2362C21.3942 12.8563 21.567 13.1664 21.8358 13.3709C22.1046 13.5754 22.4406 
+                                            13.6512 23.1126 13.8029L23.7232 13.9411C26.0848 14.4758 27.2646 14.7427 27.5459 15.6461C27.8262 16.5485 
+                                            27.0217 17.4902 25.4118 19.3728L24.9952 19.8595C24.5382 20.3942 24.3088 20.6621 24.2061 20.9923C24.1033 
+                                            21.3235 24.1379 21.6806 24.207 22.3939L24.2704 23.0438C24.5133 25.5562 24.6352 26.8119 23.8998 27.3696C23.1645 
+                                            27.9283 22.0585 27.4186 19.8486 26.401L19.2755 26.1379C18.6477 25.848 18.3337 25.704 18.0006 25.704C17.6675 
+                                            25.704 17.3536 25.848 16.7248 26.1379L16.1536 26.401C13.9427 27.4186 12.8368 27.9274 12.1024 27.3706C11.3661 
+                                            26.8118 11.488 25.5562 11.7309 23.0438L11.7942 22.3949C11.8633 21.6806 11.8979 21.3235 11.7942 20.9933C11.6925 
+                                            20.6621 11.463 20.3942 11.0061 19.8605L10.5894 19.3728C8.9795 17.4912 8.17502 16.5494 8.45534 15.6461C8.73662 
+                                            14.7427 9.91742 14.4749 12.279 13.9411L12.8896 13.8029C13.5606 13.6512 13.8957 13.5754 14.1654 13.3709C14.4342 
+                                            13.1664 14.607 12.8563 14.9526 12.2362L15.2675 11.6717Z"
+                    stroke="white" stroke-width="1.5" />
+                </g>
+              </svg>
+            </button>
+            <h2 class="element-title title__element">Небольшой заголовок</h2>
+            <p class="element-text">Описание новости, описание новости, описание новости, описание
+              новости,
+              описание новости, описание новости.</p>
+            <button class="btn btn-reset btn__button">Подробнее</button>
+        </article>
+        <article class="element-wrapper">
+            <h2 class="title-hidden">Заголовок</h2>
+            <p class="text-hidden">Текст</p>
+            <img src="img/cat_4.jpg" alt="" class="element-img">
+            <button class="btn btn-reset element-button">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="element-svg">
+                <g clip-path="url(#clip0_7_190)">
+                  <rect width="36" height="36" rx="10" fill="#0065F2" />
+                  <path d="M15.2675 11.6717C16.4838 9.49057 17.0915 8.40001 18.0006 8.40001C18.9097 8.40001 19.5174 9.49057 
+                                            20.7337 11.6717L21.0486 12.2362C21.3942 12.8563 21.567 13.1664 21.8358 13.3709C22.1046 13.5754 22.4406 
+                                            13.6512 23.1126 13.8029L23.7232 13.9411C26.0848 14.4758 27.2646 14.7427 27.5459 15.6461C27.8262 16.5485 
+                                            27.0217 17.4902 25.4118 19.3728L24.9952 19.8595C24.5382 20.3942 24.3088 20.6621 24.2061 20.9923C24.1033 
+                                            21.3235 24.1379 21.6806 24.207 22.3939L24.2704 23.0438C24.5133 25.5562 24.6352 26.8119 23.8998 27.3696C23.1645 
+                                            27.9283 22.0585 27.4186 19.8486 26.401L19.2755 26.1379C18.6477 25.848 18.3337 25.704 18.0006 25.704C17.6675 
+                                            25.704 17.3536 25.848 16.7248 26.1379L16.1536 26.401C13.9427 27.4186 12.8368 27.9274 12.1024 27.3706C11.3661 
+                                            26.8118 11.488 25.5562 11.7309 23.0438L11.7942 22.3949C11.8633 21.6806 11.8979 21.3235 11.7942 20.9933C11.6925 
+                                            20.6621 11.463 20.3942 11.0061 19.8605L10.5894 19.3728C8.9795 17.4912 8.17502 16.5494 8.45534 15.6461C8.73662 
+                                            14.7427 9.91742 14.4749 12.279 13.9411L12.8896 13.8029C13.5606 13.6512 13.8957 13.5754 14.1654 13.3709C14.4342 
+                                            13.1664 14.607 12.8563 14.9526 12.2362L15.2675 11.6717Z"
+                    stroke="white" stroke-width="1.5" />
+                </g>
+              </svg>
+            </button>
+            <h2 class="element-title title__element">Небольшой заголовок</h2>
+            <p class="element-text">Описание новости, описание новости, описание новости, описание
+              новости,
+              описание новости, описание новости.</p>
+            <button class="btn btn-reset btn__button">Подробнее</button>
+        </article>
+      </div>
+      <div class="element-slider slider flex">
+        <button class="btn btn-reset slider-prev">Назад</button>
+        <button class="btn btn-reset slider-next">Вперед</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container container-doubling footer-container flex">
+      <nav class="footer-nav nav">
+        <ul class="footer-list footer-list-first list-reset list flex">
+          <li class="footer-item"><a href="" class="footer-link link">About&nbsp;Us</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Blog</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Careers</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Newsletter</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Leaderboards</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">MoveTrainer&reg;</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Science</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Roadmap</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Podcast</a></li>
+        </ul>
+      </nav>
+      <ul class="footer-list footer-list-second list-reset flex">
+        <li class="footer-item"><a href="" class="footer-link">Cookie&nbsp;Preferences</a></li>
+        <li class="footer-item"><a href="" class="footer-link">Privacy</a></li>
+        <li class="footer-item"><a href="" class="footer-link">Terms</a></li>
+        <li class="footer-item"><a href="" class="footer-link">Need&nbsp;Help?</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

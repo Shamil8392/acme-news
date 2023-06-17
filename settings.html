@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Настройки</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/settings.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="flex">
+      <button class="btn btn-reset burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+      <form class="header-search flex" method="get">
+        <!-- action="https://jsonplaceholder.typicode.com/posts" -->
+        <label for="search" class="header-label"></label>
+        <div class="header-search-input search-field-icon flex">
+          <button class="header-input-search btn-search btn-reset" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+          <input id="search" class="header-input" type="text" name="search"
+            placeholder="Поиск новости" autofocus size="35">
+        </div>
+      </form>
+      <span class="header-span">ACME</span>
+      <div class="header-button flex">
+        <button class="btn btn-signup btn-reset">Регистрация</button>
+        <button class="btn btn-entrance btn-reset">Вход</button>
+      </div>
+    </div>
+  </header>
+  <main class="profile">
+    <div class="container container-doubling profile__container">
+      <h1 class="profile__subject">Настройки</h1>
+      <div class="profile__buttons btn buttons flex">
+        <button class="btn-reset btn__settings" id="btn__profile">Профиль</button>
+        <button class="btn-reset btn__settings" id="btn__email">Email</button>
+        <button class="btn-reset btn__settings" id="btn__password">Пароль</button>
+        <button class="btn-reset btn__settings" id="btn__delete">Удалить аккаунт</button>
+      </div>
+      <div class="profile__total">
+        <div class="profile__main main">
+          <div class="profile__box">
+            <h2 class="profile__title subtitle">Основное</h2>
+            <form action="#" method="post" id="user" class="main__container flex">
+              <label>
+                <input type="text" class="profile__name main__settings fonts__style" placeholder="Имя пользователя">
+              </label>
+              <select name="#" class="main__settings fonts__style">
+                <option disabled>Отправка сообщения</option>
+                <option value="/">Отправка сообщения</option>
+              </select>
+              <select name="#" class="main__settings fonts__style">
+                <option disabled>Язык интерфейса</option>
+                <option value="/">Язык интерфейса</option>
+              </select>
+              <select name="#" class="main__settings fonts__style">
+                <option disabled>Разрешить уведомления</option>
+                <option value="/">Разрешить уведомления</option>
+              </select>
+              <select name="#" class="main__settings fonts__style">
+                <option disabled>Видимость профиля</option>
+                <option value="/">Видимость профиля</option>
+              </select>
+              <select name="#" class="main__settings fonts__style">
+                <option disabled>Приглашение в игру</option>
+                <option value="/">Приглашение в игру</option>
+              </select>
+              <select name="#" class="main__settings fonts__style">
+                <option disabled>Ваш часовой пояс</option>
+                <option value="/">Ваш часовой пояс</option>
+              </select>
+            </form>
+            <button type="submit" form="user" class="profile__btn btn-reset">Сохранить</button>
+          </div>
+        </div>
+        <div class="rating rating__box">
+          <div class="rating__container">
+            <h2 class="subtitle">Рейтинг</h2>
+            <form action="#" method="post" id="rating" class="rating__form flex">
+              <label for="/">
+                <input type="text" class="fonts__style rating__input" placeholder="ФИДЕ">
+              </label>
+              <label for="/">
+                <input type="text" class="fonts__style rating__input" placeholder="Рейтинг: 1000">
+              </label>
+              <label for="/">
+                <input type="text" class="fonts__style rating__input" placeholder="ФШР">
+              </label>
+              <label for="/">
+                <input type="text" class="fonts__style rating__input" placeholder="Рейтинг: 1000">
+              </label>
+            </form>
+            <button type="submit" form="rating" class="rating__btn btn-reset">Сохранить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/index.js"></script>
+</body>
+</html>
