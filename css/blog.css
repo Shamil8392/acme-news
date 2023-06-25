@@ -1,0 +1,30 @@
+.element {
+  transform: translateY(0);
+}
+
+.element__caption {
+  margin: 106px 0 67px -9px;
+  text-align: center;
+  font-size: 46px;
+  letter-spacing: -1.5px;
+}
+
+.element-btn {
+  margin-bottom: 26px;
+}
+
+.footer {
+  transform: translateY(103px);
+}
+
+.footer-item:not(:last-child) {
+  padding-right: 30px;
+}
+
+.footer-link {
+  letter-spacing: -1.4px;
+}
+
+.footer-list-second {
+  transform: translateX(-81px);
+}

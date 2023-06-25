@@ -1,5 +1,38 @@
-.header-button {
-  visibility: hidden;
+.button-header {
+  align-self: center;
+  -webkit-align-self: center;
+  margin-right: 129px;
+}
+
+.button-header button {
+  padding: 10px 12px;
+  background-color: var(--color-blue_ribbon);
+  border-radius: 10px;
+}
+
+.button-header button:focus {
+  outline: 2px solid var(--color-blue_ribbon);
+  outline-offset: 5px;
+}
+
+.button-header button :hover {
+  outline: none;
+  fill: var(--color-malibu);
+}
+
+.button-header button:active {
+  outline: none;
+  background-color: var(--color-blue);
+}
+
+.button-header button:not(:last-child) {
+  margin-right: 24px;
+}
+
+.button-header svg {
+  width: 29px;
+  height: auto;
+  fill: var(--color-white);
 }
 
 .profile {
@@ -120,7 +153,7 @@
   /* display: block; */
 }
 
-.rating__box {
+.rating {
   position: absolute;
   right: 0;
   display: inline-block;

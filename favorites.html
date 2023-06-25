@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Настройки</title>
+  <title>Подробнее о блоге</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/settings.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/swiper.css">
 </head>
-
 <body>
   <header class="header">
     <div class="header-container flex">
@@ -32,22 +32,23 @@
                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg>
           </button>
-          <input id="search" class="header-input" type="text" name="search" placeholder="Поиск новости"
-            autofocus size="35">
+          <input id="search" class="header-input" type="text" name="search"
+            placeholder="Поиск новости" autofocus size="35">
         </div>
       </form>
       <span class="header-span">ACME</span>
       <div class="button button-header flex">
-        <button class="btn btn-reset">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-            class="bi bi-bell" viewBox="0 0 16 16">
+        <button class="btn btn-reset btn__bell">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-bell"
+            viewBox="0 0 16 16">
             <path
               d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
           </svg>
           <span class="count count-2"></span>
         </button>
-        <button class="btn btn-reset">
-          <svg width="16" height="16" viewBox="0 0 134 134" version="1.1"
+        <button class="btn btn-reset btn__crown">
+          <?xml version="1.0" encoding="utf-8"?>
+          <svg width="134px" height="134px" viewBox="0 0 134 134" version="1.1"
             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <image
@@ -57,16 +58,16 @@
             <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.67 0.67)" />
           </svg>
         </button>
-        <button class="btn btn-reset">
+        <button class="btn btn-reset btn__lightning">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
             class="bi bi-lightning-charge" viewBox="0 0 16 16">
             <path
               d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z" />
           </svg>
         </button>
-        <button class="btn btn-reset">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-            class="bi bi-person" viewBox="0 0 16 16">
+        <button class="btn btn-reset btn__man">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-person"
+            viewBox="0 0 16 16">
             <path
               d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
           </svg>
@@ -74,84 +75,48 @@
       </div>
     </div>
   </header>
-  <main class="profile">
-    <div class="container container-doubling profile__container">
-      <h1 class="profile__subject">Настройки</h1>
-      <div class="profile__buttons btn buttons flex">
-        <button class="btn-reset btn__settings" id="btn__profile">Профиль</button>
-        <button class="btn-reset btn__settings" id="btn__email">Email</button>
-        <button class="btn-reset btn__settings" id="btn__password">Пароль</button>
-        <button class="btn-reset btn__settings" id="btn__delete">Удалить аккаунт</button>
-      </div>
-      <div class="profile__total fonts">
-        <div class="profile__main main">
-          <div class="profile__box">
-            <h2 class="profile__title subtitle">Основное</h2>
-            <form action="#" method="post" id="user" class="main__container flex">
-              <label>
-                <input type="text" id="username class="profile__name main__settings fonts__style" placeholder="Имя пользователя">
-              </label>
-              <select name="#" class="main__settings fonts__style">
-                <option disabled>Отправка сообщения</option>
-                <option value="/">Отправка сообщения</option>
-              </select>
-              <select name="#" class="main__settings fonts__style">
-                <option disabled>Язык интерфейса</option>
-                <option value="/">Язык интерфейса</option>
-              </select>
-              <select name="#" class="main__settings fonts__style">
-                <option disabled>Разрешить уведомления</option>
-                <option value="/">Разрешить уведомления</option>
-              </select>
-              <select name="#" class="main__settings fonts__style">
-                <option disabled>Видимость профиля</option>
-                <option value="/">Видимость профиля</option>
-              </select>
-              <select name="#" class="main__settings fonts__style">
-                <option disabled>Приглашение в игру</option>
-                <option value="/">Приглашение в игру</option>
-              </select>
-              <select name="#" class="main__settings fonts__style">
-                <option disabled>Ваш часовой пояс</option>
-                <option value="/">Ваш часовой пояс</option>
-              </select>
-            </form>
-            <button type="submit" id="save-button_1" form="user" class="profile__btn btn-reset" data-action="save">Сохранить</button>
-          </div>
+  <section class="element">
+    <h1 class="title-hidden">Заголовок</h1>
+    <div class="container container-doubling element-container">
+      <h2 class="element-caption">Избранное</h2>
+      <!-- Slider main container -->
+      <div class="swiper slider-container">
+        <div class="element-blog swiper-wrapper">
+          <!-- Additional required wrapper -->
+          <article class="element-item swiper-slide"></article>
         </div>
-        <div class="rating">
-          <div class="rating__container">
-            <h2 class="subtitle">Рейтинг</h2>
-            <form action="#" method="post" id="rating" class="rating__form flex">
-              <label>
-                <input type="text" class="fonts__style rating__input" placeholder="ФИДЕ">
-              </label>
-              <label>
-                <input type="text" class="fonts__style rating__input" placeholder="Рейтинг: 1000">
-              </label>
-              <label>
-                <input type="text" class="fonts__style rating__input" placeholder="ФШР">
-              </label>
-              <label>
-                <input type="text" class="fonts__style rating__input" placeholder="Рейтинг: 1000">
-              </label>
-            </form>
-            <button type="submit" id="save-button_2" form="rating" class="rating__btn btn-reset" data-action="save">Сохранить</button>
-          </div>
-        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
     </div>
-  </main>
-  <script>
-    // Кнопка Профиль
-
-      let profile = document.querySelector('.btn__settings');
-      let profileTotal = document.querySelector('.profile__total');
-
-      profile.addEventListener('click', () => {
-        profileTotal.classList.toggle('profile--total');
-      });
-  </script>
+  </section>
+  <footer class="footer">
+    <div class="container container-doubling footer-container flex">
+      <nav class="footer-nav nav">
+        <ul class="footer-list footer-list-first list-reset list flex">
+          <li class="footer-item"><a href="" class="footer-link link">About&nbsp;Us</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Blog</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Careers</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Newsletter</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Leaderboards</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">MoveTrainer&reg;</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Science</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Roadmap</a></li>
+          <li class="footer-item"><a href="" class="footer-link link">Podcast</a></li>
+        </ul>
+      </nav>
+      <ul class="footer-list footer-list-second list-reset flex">
+        <li class="footer-item"><a href="" class="footer-link">Cookie&nbsp;Preferences</a></li>
+        <li class="footer-item"><a href="" class="footer-link">Privacy</a></li>
+        <li class="footer-item"><a href="" class="footer-link">Terms</a></li>
+        <li class="footer-item"><a href="" class="footer-link">Need&nbsp;Help?</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>

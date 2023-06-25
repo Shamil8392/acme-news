@@ -1,9 +1,31 @@
 .swiper {
-  width: 100%;
+  width: 98%;
   height: auto;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  /* display: none; */
+@media (max-width: 1600px) {
+  .swiper {
+    width: 82%;
+  }
+}
+
+@media (max-width: 960px) {
+  .swiper {
+    width: 84%;
+    margin-left: 41px;
+  }
+}
+
+@media (max-width: 380px) {
+  .swiper {
+    width: 90%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .swiper {
+    width: 93%;
+    margin-left: -3px;
+  }
 }
